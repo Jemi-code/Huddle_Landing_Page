@@ -1,0 +1,105 @@
+@import url("./bootstrap-5.0.2-dist/css/bootstrap.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --s-magenta: hsl(300, 69%, 71%);
+}
+
+.bg-violet{
+    background-color: var(--violet);
+}
+
+body{
+    background-image: url("../images/bg-desktop.svg");
+    color: var(--bs-white);
+    font-size: 15px !important;
+}
+
+.wrapper{
+    margin: 0 4rem;
+}
+
+header{
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+
+.logo{
+    max-width: 40%;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+button{
+    width: 35%;
+}
+
+button:hover{
+    background-color: var(--s-magenta) !important;
+    outline: none;
+    border: none;
+    color: white !important;
+}
+
+span{
+    display: block;
+}
+
+.left{
+    vertical-align: middle;
+    width: 70%;
+}
+
+li{
+    display: inline;
+    border: 1px white solid;
+    padding: 0.5rem 0.5rem 0.7rem 0.5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 0.7rem;
+}
+
+li:hover{
+    border: 1px var(--s-magenta) solid;
+}
+
+li:hover > .icon:hover{
+    fill: var(--s-magenta);
+}
+
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: white;
+  }
+
+@media (max-width: 768px){
+    .left{
+        width: 100% !important;
+        margin-bottom: 4rem;
+    }
+
+    .right{
+        width: 100% !important;
+        text-align: center;
+    }
+
+    p{
+        margin-bottom: 1rem;
+    }
+}
